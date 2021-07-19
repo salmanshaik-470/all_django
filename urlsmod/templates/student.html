@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hai this is student page</h1>
+
+    {% if data %}
+
+    {% for i in data%}
+        <table border="3">
+            <tr>
+                <td>{{i.stdid }}</td>
+                <td>{{i.stdname }}</td>
+            </tr>
+        </table>
+
+    {% endfor %}
+
+    {% else %}
+        <h1>No Data</h1>
+    {% endif%}
+</body>
+</html>

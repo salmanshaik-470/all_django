@@ -1,0 +1,28 @@
+
+
+my name {{n|upper}}
+
+{% if n == 'salma' %}
+{{n}}
+{% elif n == 'salman' %}
+{{n}}
+
+{% else %}
+<h1>it is matching</h1>
+{% endif %}
+
+<!--{% for i in n %}-->
+<!--<h1>{{n}}</h1>-->
+
+<!--{%endfor%}-->
+
+my name is {{n|capfirst}}
+
+<h1>my name is {{n|length}}</h1>
+
+
+<h1>my name is {{n|truncatewords:1}}</h1>
+<h1>my name is {{n|slice:'2'}}</h1>
+<h1>my name is {{n|truncatechars:7}}</h1>
+<h1>my name is {{date|date:"SHORT_DATE_FORMAT"}}</h1>
+<!--<h1>my name is {{n|length}}</h1>-->

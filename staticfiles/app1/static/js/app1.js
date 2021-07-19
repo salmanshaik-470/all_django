@@ -1,0 +1,1 @@
+prompt("hai my name is salman");
