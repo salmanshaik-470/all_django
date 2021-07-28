@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+  <center>
+    <h1>
+      Profile Form
+    </h1><br><br>
+   Hello {{name}}
+     <br><br>
+{% if messages %}
+    {% for msg in messages %}
+        <span style="color:blue;">
+            {{msg}}
+        </span>
+    {% endfor %}
+{% endif %}
+      <br>
+      <a href="{% url 'logout' %}">
+          Logout
+      </a>
+
+  </center>
+</div>
+
+
+
+</body>
+</html>
